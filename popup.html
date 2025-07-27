@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Image URL</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      input,
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 14px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+      }
+      #copyBtn {
+        background-color: #008cba;
+      }
+      #copyBtn.copied {
+        background-color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Refine API request</h3>
+    <input type="text" id="apiRequest" placeholder="Enter API request" />
+    <input
+      type="text"
+      id="outputLink"
+      readonly
+      placeholder="Generated URL will appear here"
+    />
+    <button id="copyBtn">Copy</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
